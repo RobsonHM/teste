@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home • Meu Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="index.html">MEU SITE</a>
+        <nav class="menu" aria-label="Menu principal">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="games.html">Games</a>
+          <a data-nav href="filmes.html">Filmes</a>
+          <a data-nav href="musica.html">Música</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero">
+        <h1>Base do projeto (tema preto)</h1>
+        <p>Estrutura simples para múltiplas páginas. Aqui você vai substituir os cards por conteúdo real.</p>
+      </section>
+
+      <section class="grid" aria-label="Atalhos">
+        <div class="card">
+          <b>Games</b>
+          <span>Área para notícias, reviews, guias.</span>
+        </div>
+        <div class="card">
+          <b>Filmes</b>
+          <span>Listas, lançamentos e análises.</span>
+        </div>
+        <div class="card">
+          <b>Música</b>
+          <span>Playlists, trilhas e novidades.</span>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="y"></span> Meu Site • Base inicial</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
